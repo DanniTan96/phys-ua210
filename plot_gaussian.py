@@ -12,7 +12,8 @@ def plotter():
 	plt.plot(x, y, 'bo')
 	plt.xlabel("X")
 	plt.ylabel("Y")
-	plt.savefig("gaussian.png")
+	# plt.savefig("gaussian.png")
+	plt.show()
 
 if __name__ == "__main__":
 	plotter()

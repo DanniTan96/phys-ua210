@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 def deriv():
 	x = np.ones(7)
-	delta = np.array([1e-2, 1e-4, 1e-6, 1e-8, 1e-10, 1e-12, 1e-14], dtype = np.float32)
+	delta = np.array([1e-2, 1e-4, 1e-6, 1e-8, 1e-10, 1e-12, 1e-14], dtype = np.float64)
 
 	deriv_real = np.ones(7) 
 
@@ -17,7 +17,7 @@ def deriv():
 	plt.plot(horiz, vert, "ko")
 	plt.xlabel(r"$log_{10}(\delta)$")
 	plt.ylabel(r"$log_{10}(|Analytic - Computational|)$")
-	plt.savefig("Ex4-3.png")
+	plt.show()
 
 def f(x):
 	y = x*(x-1)

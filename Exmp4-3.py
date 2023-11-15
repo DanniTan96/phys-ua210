@@ -3,7 +3,7 @@ import timeit
 import matplotlib.pyplot as plt 
 
 def MatrixMult():
-	steps = np.arange(10, 210, 10)
+	steps = np.arange(10, 510, 10)
 
 	#Time stamps for how long each operation took using for-loops:
 	timeZ_for = []
